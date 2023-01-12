@@ -1,6 +1,6 @@
 import styles from "../css/Main.module.css";
 import Banner from "../components/Banner";
-import MenuBar from "../components/MenuBar";
+import MainMenuBar from "../components/MainMenuBar";
 import ItemWrap from "../components/ItemWrap";
 
 function Developers() {
@@ -9,7 +9,7 @@ function Developers() {
       <Banner text="Developers" />
       <div className={styles.container}>
         <section className={styles.wrapper}>
-          <MenuBar />
+          <MainMenuBar />
           <ItemWrap />
         </section>
       </div>

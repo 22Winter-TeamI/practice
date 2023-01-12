@@ -1,6 +1,6 @@
 import "../css/Main.css";
 import Banner from "../components/Banner";
-import MenuBar from "../components/MenuBar";
+import MainMenuBar from "../components/MainMenuBar";
 import ResultPicture from "../components/ResultPicture";
 import styles from "../css/Main.module.css";
 
@@ -10,7 +10,7 @@ function Gallery() {
       {/* <Banner text="Gallery module" /> */}
       <div className={styles.container}>
         <section className={styles.wrapper}>
-          <MenuBar />
+          <MainMenuBar />
           <Banner text="Gallery module" />
           <div style={{ width: "100%", textAlign: "center" }}>
             Repaint Background
