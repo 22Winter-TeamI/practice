@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110vh;
+  width: 100vw;
+  font-size: 14px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.circle {
+  width: 60px;
+  height: 29px;
+  line-height: 25px;
+  background-color: #FFFFFF;
+  color: #007BE5;
+  border-radius: 46%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border-color: rgba(0, 0, 0, 0.116);
+}
+
+.stepWrapper {
+  display: flex;
+  margin-bottom: 600px;/*단계-버튼 간격*/
+}
+
+.stepBlock .circleWrapper {
+  padding: 0px 60px;
+  position: relative;
+}
+
+.selected .circle {
+  color:#FFFFFF ;
+  background-color: #007BE5;
+  border-color: rgba(0, 0, 0, 0.116);
+}
+
+.stepBlock:not(:last-child) > .circleWrapper::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  background-color: #007BE5;
+  margin: auto;
+  z-index: -1;
+}
+
+.stepBlock:not(:last-child) > .circleWrapper::after {
+  height: 3px;
+}
+
+.stepBlock:not(:last-child).selected > .circleWrapper::after, .stepBlock:not(:last-child).selected ~ .stepBlock:not(:last-child) > .circleWrapper::after {
+  height: 2px;
+  opacity: 0.6;
+}
+
+.primaryButton {
+  padding: 10px 25px;
+  background-color: #767D7F;
+  border: none;
+  margin: 10px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.primaryButton:disabled {
+  opacity: 0.5;
+}
