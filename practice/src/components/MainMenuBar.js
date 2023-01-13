@@ -22,7 +22,9 @@ export default function MainMenuBar() {
             <a href="/gallery">Gallery</a>
           </li>
           <li>
+           <a href="/login">
             <button>Log in</button>
+            </a>
           </li>
         </ul>
       </nav>
