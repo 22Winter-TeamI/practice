@@ -1,0 +1,54 @@
+.content {
+  margin-left: 21%;
+  width: 79%;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.title {
+  color: white;
+  width: 100%;
+  margin: 0 0 78px 0;
+  font-size: 30px;
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagebox {
+  width: 49%;
+}
+
+.imagebox a {
+  border-radius: 20px;
+  overflow: hidden;
+  display: block;
+  line-height: 0;
+}
+
+.image {
+  width: 100%;
+}
+
+.image_text {
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+  color: white;
+  margin-top: 30px;
+}
+
+.container {
+  display: flex;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: flex-start;
+  /* padding: 0 10px; */
+}

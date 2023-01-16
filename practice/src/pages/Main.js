@@ -1,6 +1,6 @@
 import "../css/Main.css";
 import Banner from "../components/Banner";
-import MainMenuBar from "../components/MainMenuBar";
+import Nav from "../components/Nav";
 import ResultPicture from "../components/ResultPicture";
 import styles from "../css/Main.module.css";
 import Carousel from "../components/Carousel";
@@ -10,7 +10,7 @@ function Main() {
     <>
       <div className={styles.container}>
         <section className={styles.wrapper}>
-          <MainMenuBar />
+          <Nav />
           <Carousel />
           {/* <Banner text="Gallery module" /> */}
           <div
