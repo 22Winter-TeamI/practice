@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "../css/ProgressBar.module.css";
 
 function App() {
   const labelArray = ['Select Style', 'Choose Image', 'Repaint', 'Download Result'];
@@ -7,27 +8,27 @@ function App() {
   function updateStep(step) {
     updateCurrentStep(step);
   }
-
+//    <section className={styles.Banner}>
   return (
-    <div className="App">
-      <div className="stepWrapper">
+    <div className={styles.App}>
+      <div className={styles.stepWrapper}>
         {labelArray.map((item, index) => (
           <div 
             key={index} 
-            className={`stepBlock ${currentStep === index + 1 ? 'selected' : ''}`}
+            className={`${styles.stepBlock} ${currentStep === index + 1 ? styles.selected : ''}`}
             onClick={() => updateStep(index + 1)}
           >
-            <div className="circleWrapper">
-              <div className="circle">{index + 1}</div>
+            <div className={styles.circleWrapper}>
+              <div className={styles.circle}>{index + 1}</div>
             </div>
             <span>{item}</span>
           </div>
         ))}
       </div>
-      <button className="primaryButton" disabled={currentStep === 1} onClick={() => updateStep(currentStep - 1)}>
+      <button className={styles.primaryButton} disabled={currentStep === 1} onClick={() => updateStep(currentStep - 1)}>
         Previous Step
       </button>
-      <button className="primaryButton" disabled={currentStep === labelArray.length} onClick={() => updateStep(currentStep + 1)}>
+      <button className={styles.primaryButton} disabled={currentStep === labelArray.length} onClick={() => updateStep(currentStep + 1)}>
         Next Step
       </button>
     </div>
