@@ -2,6 +2,7 @@ import styles from "../css/Selectstyle.module.css";
 import Nav from "../components/Nav";
 import leftbutton from "../images/leftbutton.jpg";
 import rightbutton from "../images/rightbutton.jpg";
+
 // import ProgressBar from "../components/ProgressBar";
 
 export default function Selectstyle() {
@@ -12,9 +13,9 @@ export default function Selectstyle() {
           <Nav />
           <div className={styles.content}>
             <h1 className={styles.title}>Select Style</h1>
- 
+            
         
-              {/* <ProgressBar /> */}
+            
             
 
             <div className={styles.select}>
